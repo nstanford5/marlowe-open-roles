@@ -42,7 +42,7 @@ When inputing an address from the UI prior to deploying the contract, Role token
 
 You can view these Role Tokens in your Wallet under Assets with a name reflective of the name specified for the Role in the Smart Contract.
 
-![Nami Role Token](nami-role-token.png "CheckingAccount Role Token")
+![Nami Role Token](nami-role-token-better.png "CheckingAccount Role Token")
 
 When designating an address after launching the contract, the Open Roles feature is used. 
 
