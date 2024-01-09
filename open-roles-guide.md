@@ -1,5 +1,9 @@
 ## Roles Guide
 
+TODO -- check verifies
+TODO -- add code examples with TS-SDK
+
+
 The purpose of this guide is to bring together all of the information we have about Roles and Participants in Marlowe.
 
 ### Description
@@ -25,9 +29,9 @@ These roles are uniquely identified using Role Tokens.
 ### Role Tokens
 
 devNotes:
-1. Did I just have to pay a txn fee to mint Role Tokens? Using checking<>savings in Runner
-    - It seems like using Roles in the Runner does cost a Mint txn fee for Role Tokens
-    - The TS-SDK does not have a Mint txn fee for Role Tokens. using smart-gift
+1. Did I just have to pay a txn fee to mint Role Tokens? Using checking<>savings contract in Runner
+    - It seems like using Roles in the Runner does cost a Mint txn fee for Role Tokens.
+    - The TS-SDK does not have a Mint txn fee for Role Tokens. using smart-gift contract
 
 Role Tokens are used to identify Roles to authorize transactions providing additional security and flexibility for your Smart Contracts. They are handled implicitly by the Marlowe Runtime(verify).
 
@@ -42,6 +46,7 @@ When inputing an address from the UI prior to deploying the contract, Role token
 
 You can view these Role Tokens in your Wallet under Assets with a name reflective of the name specified for the Role in the Smart Contract.
 
+TODO -- make this pretty
 ![Nami Role Token](nami-role-token-better.png "CheckingAccount Role Token")
 
 When designating an address after launching the contract, the Open Roles feature is used. 
@@ -56,7 +61,7 @@ This feature is best used when a developer is deploying a Smart Contract where c
 
 The developer would deploy a contract that could be verified on-chain before a user interacts with it. The user initiates some action, like a deposit or choice, which triggers the Smart Contract to assign them the appropriate role and distribute the Role Token from the Validator Script.
 
-The developer just needs to specify the `{!ts} OpenRoles` type when setting Participants in a contract, the rest is handled behind the scenes by the Marlowe Runtime(verify). Do we also need to 
+The developer just needs to specify the OpenRoles type when setting Participants in a contract, the rest is handled behind the scenes by the Marlowe Runtime(verify). Do we also need to 
 
 Because we have now introduced a separate Validator Script to help with our Smart Contract, we need to assign a Thread Token.
 
@@ -65,4 +70,6 @@ Because we have now introduced a separate Validator Script to help with our Smar
 Much like a Role token is tied to a Participant, a Thread Token is tied to a Contract instance.
 
 Thread Tokens are required for the Validator Script to be able to determine which "thread" of Role Tokens to track, where "threads" are instances of a contract.
+
+TODO -- demonstrate ThreadToken
 
