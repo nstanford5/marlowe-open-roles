@@ -1,6 +1,6 @@
 ## Roles Guide
 
-TODO -- check verifies
+TODO -- check verifies   
 TODO -- add code examples with TS-SDK
 
 
