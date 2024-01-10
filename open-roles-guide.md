@@ -46,9 +46,6 @@ When inputing an address from the UI prior to deploying the contract, Role token
 
 You can view these Role Tokens in your Wallet under Assets with a name reflective of the name specified for the Role in the Smart Contract.
 
-TODO -- make this pretty
-![Nami Role Token](nami-role-token-better.png "CheckingAccount Role Token")
-
 When designating an address after launching the contract, the Open Roles feature is used. 
 
 ### Open Roles
@@ -59,9 +56,9 @@ When using Open Roles, the Marlowe Contract sends the Role tokens to a Validator
 
 This feature is best used when a developer is deploying a Smart Contract where certain addresses are unknown. It could be one address or all addresses associated with a contract.
 
-The developer would deploy a contract that could be verified on-chain before a user interacts with it. The user initiates some action, like a deposit or choice, which triggers the Smart Contract to assign them the appropriate role and distribute the Role Token from the Validator Script.
+The developer would deploy a contract that could be verified on-chain before a user interacts with it. The user initiates some action, like a Deposit or Choice, which triggers the Smart Contract to assign them the appropriate role and distribute the Role Token from the Validator Script.
 
-The developer just needs to specify the OpenRoles type when setting Participants in a contract, the rest is handled behind the scenes by the Marlowe Runtime(verify). Do we also need to 
+The developer just needs to specify the OpenRoles type when setting Participants in a contract, the rest is handled behind the scenes by the Marlowe Runtime(verify). 
 
 Because we have now introduced a separate Validator Script to help with our Smart Contract, we need to assign a Thread Token.
 
