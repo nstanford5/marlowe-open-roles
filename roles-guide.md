@@ -1,9 +1,9 @@
-## Roles Guide
+## Roles in Marlowe
 
 TODO -- check verifies   
 TODO -- add code examples with TS-SDK -- support added and testing 1/15.
 
-The purpose of this guide is to bring together all of the information we have about Roles and Participants in Marlowe.
+The purpose of this guide is to bring together all of the information we have about Roles and Participants in Marlowe Contracts. TODO -- add more here..
 
 ### Description
 
