@@ -1,7 +1,7 @@
 ## Roles Guide
 
 TODO -- check verifies   
-TODO -- add code examples with TS-SDK
+TODO -- add code examples with TS-SDK -- support added and testing 1/15.
 
 The purpose of this guide is to bring together all of the information we have about Roles and Participants in Marlowe.
 
@@ -28,7 +28,7 @@ There could be one or many tokens for a specific Role.
 
 Role Tokens are distributed at contract initialization.
 
-You can view these Role Tokens in your Wallet under NFTs/Assets with a name reflective of the name specified for the Role in the Smart Contract (in Nami).
+You can view these Role Tokens in your Wallet under NFTs/Assets with a name reflective of the name specified for the Role in the Smart Contract (in Nami, Lace does not carry the name over from the DApp to the asset).
 
 When designating an address after launching the contract, the Open Roles feature is used. 
 
